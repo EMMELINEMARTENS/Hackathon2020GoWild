@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
+	AmbientLight,
   AppRegistry,
   StyleSheet,
   Text,
@@ -7,12 +8,12 @@ import {
 } from 'react-360';
 import Pangolin from './components/pangolin';
 
-export default class PangolinRescueGame extends React.Component {
-  render() {
+function App () {
     return (
       <View>
+		<AmbientLight intensity={2.5}/>
         <Pano source={asset('rainforest.jpeg')}/>
-        <Text
+        {/* <Text
           style={{
             backgroundColor: '#777879',
             fontSize: 0.8,
@@ -25,11 +26,10 @@ export default class PangolinRescueGame extends React.Component {
             transform: [{translate: [0, 0, -3]}],
           }}>
           hello
-        </Text>
+        </Text> */}
       </View>
     );
-  }
-};
+  };
 
 // const styles = StyleSheet.create({
 //   panel: {

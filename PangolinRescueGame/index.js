@@ -5,8 +5,8 @@ import {
   Text,
   View,
 } from 'react-360';
-import App from './src'
-import Pangolin from './components/pangolin';
+import App from './src/App'
+
 
 export default class PangolinRescueGame extends React.Component {
   render() {
@@ -39,4 +39,3 @@ export default class PangolinRescueGame extends React.Component {
 // });
 
 AppRegistry.registerComponent('PangolinRescueGame', () => PangolinRescueGame);
-AppRegistry.registerComponent('Pangolin', () => Pangolin);
