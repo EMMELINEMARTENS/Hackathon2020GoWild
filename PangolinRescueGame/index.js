@@ -5,6 +5,7 @@ import {
   Text,
   View,
 } from 'react-360';
+import App from './src'
 import Pangolin from './components/pangolin';
 
 export default class PangolinRescueGame extends React.Component {
