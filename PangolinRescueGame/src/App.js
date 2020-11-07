@@ -1,18 +1,41 @@
-import React, {useState} from 'react';
+import React,{Component} from 'react';
 import {
 	AmbientLight,
-  AppRegistry,
-  StyleSheet,
-  Text,
+	Entity,
+	asset,
+	Model,
   View,
 } from 'react-360';
-import Pangolin from './components/pangolin';
 
-function App () {
-    return (
+// import Pangolin from './components';
+
+export default class App extends React.Component{
+   constructor(props){  
+    super(props);  
+    this.state = {  
+         name: "" 
+      } }
+
+	render(){
+   return (
       <View>
 		<AmbientLight intensity={2.5}/>
-        <Pano source={asset('rainforest.jpeg')}/>
+		<Model
+		source={{
+			obj: asset('/pangolin/3dpangolin.obj'),
+			mtl: asset('/pangolin/3dpangolin.mtl')
+		}}
+		style={{
+			transform:[
+				{translate: [-1, 0, -0.75]},
+				{scale: 0.075},
+				{rotateX: 180},
+				{rotateY: -360},
+			]
+		}}
+		
+		/>
+		
         {/* <Text
           style={{
             backgroundColor: '#777879',
@@ -29,6 +52,9 @@ function App () {
         </Text> */}
       </View>
     );
+	}
+
+ 
   };
 
 // const styles = StyleSheet.create({
@@ -51,5 +77,3 @@ function App () {
 //   },
 // });
 
-AppRegistry.registerComponent('PangolinRescueGame', () => PangolinRescueGame);
-AppRegistry.registerComponent('Pangolin', () => Pangolin);

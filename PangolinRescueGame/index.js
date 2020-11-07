@@ -1,14 +1,20 @@
-import React from 'react';
+import React,{Component} from 'react';
+// import { AppRegistry } from 'react-native';
 import {
-  AppRegistry,
+AppRegistry,
   StyleSheet,
   Text,
   View,
 } from 'react-360';
-import App from './src/App'
+import App from './src/App';
 
 
-export default class PangolinRescueGame extends React.Component {
+export default class PangolinRescueGame extends React.Component{
+   constructor(props){  
+    super(props);  
+    this.state = {  
+         name: "" 
+      } }
   render() {
     return (
       <View>
