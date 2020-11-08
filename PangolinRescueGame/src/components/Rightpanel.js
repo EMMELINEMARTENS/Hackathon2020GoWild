@@ -7,9 +7,12 @@ import {
   StyleSheet,
   Text,
   VrButton,
+  NativeModules,
 
 } from 'react-360';
 import pangolin_info from '../../data/pangolinData';
+
+const {AudioModule } = NativeModules;
 
 export default class Rightpanel extends React.Component{
   state = {
@@ -17,7 +20,7 @@ export default class Rightpanel extends React.Component{
     info:pangolin_info.Habitat.info,
     img:pangolin_info.Habitat.img,
     background:pangolin_info.Habitat.background,
-    nextDetail:pangolin_info.Habitat.nextDetail,
+	nextDetail:pangolin_info.Habitat.nextDetail,
   }
 
   Gofurther(nextPage){
@@ -32,7 +35,15 @@ export default class Rightpanel extends React.Component{
 	  Environment.setBackgroundImage(asset(`${pangolin_info[`${nextPage}`].background}`))
   }
 
+  playAmbientMusic(){
+	  AudioModule.playEnvironmental({
+		  source: asset('./sounds/rainforest.wav'),
+		  volume:0.3
+	  })
+  }
+
   render(){
+	  this.playAmbientMusic();
     return(
       <View style={styles.wrapper}>
         <View>

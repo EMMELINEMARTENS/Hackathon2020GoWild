@@ -11,13 +11,15 @@ import Rightpanel from './src/components/Rightpanel';
 import Middlepanel from './src/components/Middlepanel';
 
 
+
 export default class PangolinRescueGame extends React.Component{
    constructor(props){  
     super(props);  
     this.state = {  
-         name: "" 
+         scene:'',
       } }
   render() {
+    
     return (
       <View>
       <App/>

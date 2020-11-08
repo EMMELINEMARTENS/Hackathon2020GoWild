@@ -69,6 +69,6 @@ Reproduction: {
     detail: 'Traps' ,
     info:`They trap these pangolins to make clothes of them, use them in medicine , eat them so that is the reason why these people are wildtrafficking these pangolins a lot.`,
     img:'traps.jpg',
-     background:'wood_house.jpg',
+    background:'wood_house.jpg',
   }
 }

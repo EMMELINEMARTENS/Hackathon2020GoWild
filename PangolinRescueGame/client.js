@@ -37,6 +37,17 @@ function init(bundle, parent, options = {}) {
     r360.createRoot('Rightpanel', {}),
     rightpanel
   )
+  const cylinderSurface = new Surface(
+    800, /* width */
+    450, /* height */
+    Surface.SurfaceShape.Cylinder /* shape */
+  );
+
+  r360.renderToSurface(
+    r360.createRoot('Scene', { /* initial props */ }),
+    cylinderSurface,
+    'main'
+  );
   // Load the initial environment
   r360.compositor.setBackground(r360.getAssetURL('rainforest.jpeg'));
 }

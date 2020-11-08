@@ -5,17 +5,24 @@ import {
 	asset,
   View,
 } from 'react-360';
+import PangolinVideo from './components/PangolinVideo';
 
 import Entity from 'Entity';
+
 
 // import Pangolin from './components';
 
 export default class App extends React.Component{
-   constructor(props){  
-    super(props);  
-    this.state = {  
-         name: "" 
-      } }
+  state = {
+    detail:pangolin_info.Habitat.detail,
+    info:pangolin_info.Habitat.info,
+    img:pangolin_info.Habitat.img,
+    background:pangolin_info.Habitat.background,
+	nextDetail:pangolin_info.Habitat.nextDetail,
+  }
+  Renderfood(){
+	  
+  }
 
 	render(){
    return (
@@ -38,6 +45,7 @@ export default class App extends React.Component{
 		}}
 		
 		/>
+    <PangolinVideo/>
       </View>
     );
 	}
