@@ -20,17 +20,18 @@ function init(bundle, parent, options = {}) {
     r360.createRoot('PangolinRescueGame', {}),
     r360.getDefaultLocation()
   )
-  const leftpanel = new Surface(600,300, Surface.SurfaceShape.Flat);
-  leftpanel.setAngle(0,0)
+
+  const middlepanel = new Surface(600,300, Surface.SurfaceShape.Flat);
+  middlepanel.setAngle(0,0)
 
   r360.renderToSurface(
-    r360.createRoot('Leftpanel', {}),
-    leftpanel
+    r360.createRoot('Middlepanel', {}),
+    middlepanel
   )
 
 
-  const rightpanel = new Surface(300,600, Surface.SurfaceShape.Flat);
-  rightpanel.setAngle(-0.5,0)
+  const rightpanel = new Surface(600,300, Surface.SurfaceShape.Flat);
+  rightpanel.setAngle(0.5,0)
 
   r360.renderToSurface(
     r360.createRoot('Rightpanel', {}),

@@ -1,10 +1,10 @@
 export default pangolin_info = {
-  habitat: {
+  Habitat: {
     detail: 'Habitat',
     info: `
       * can be found across Asia and Africa`,
     img: 'habitat.jpg',
-    background:'',
+    background:'pagolinhabitat.jpg',
     nextDetail: ['Diet'],
   },
   Diet: {
@@ -13,7 +13,7 @@ export default pangolin_info = {
       * These animmals eat ants and termites.
       * They use an extraordinarily long, sticky tongue.`,
     img: 'diet.jpg',
-     background:'pangolinhabitat.jpg',
+     background:'pagolinhabitat.jpg',
     nextDetail: ['Physical_characteristics']
   },
   Physical_characteristics: {
@@ -23,7 +23,7 @@ export default pangolin_info = {
       * Color: from light to yellowish brown through olive to dark brown.
       * The four Asian pangolins are distinguished from the African species by the presence of bristles.`,
     img: 'physical.jpg',
-     background:'',
+     background:'pango_road.jpg',
     nextDetail: ['Species']
   },
   Species: {
@@ -33,7 +33,7 @@ export default pangolin_info = {
       * Chinese pangolin, Indian pangolin, Sunda pangolin and Philippine pangolin, which inhabit Asia.
       * White-bellied pangolin, black-bellied pangolin, giant pangolin and Temminck's pangolin, which occur in Africa.`,
     img: 'species.jpg',
-     background:'',
+     background:'pango_road.jpg',
     nextDetail: ['Behavior']
   },
 Behavior: {
@@ -43,7 +43,7 @@ Behavior: {
       * Some pangolin species such as the Chinese pangolin sleep in underground burrows during the day.
       * Some others including black-bellied pangolins and Sunda pangolins are known to sleep in trees.`,
     img: 'behavior.jpg',
-     background:'',
+     background:'trees.jpg',
     nextDetail: ['Reproduction']
   },
 Reproduction: {
@@ -53,22 +53,22 @@ Reproduction: {
       * Pangolins reach sexual maturity at two years. 
       * Most pangolins give birth to a single offspring, though two and three young have been reported in the Asian species.`,
     img: 'reproduction.jpg',
-     background:'',
+     background:'eaten_pangolin.jpg',
     nextDetail: ['Problematic']
   },
   Problematic: {
     detail: 'Problematic' ,
     info: `
       * Poaching for illegal wildlife trade.
-      * Habitat loss have made these incredible creatures one of the most threatened groups of mammals in the world.`,
+      * Habitat loss have made these incredible creatures one of the most threatened groups of annimals in the world.`,
     img: 'problematic.jpg',
-     background:'',
-    nextDetail: ['']
+     background:'cabin_in_the_woods.jpg',
+    nextDetail: ['Traps']
   },
-  traps:{
-    detail: 'traps' ,
-    info:``,
+  Traps:{
+    detail: 'Traps' ,
+    info:`They trap these pangolins to make clothes of them, use them in medicine , eat them so that is the reason why these people are wildtrafficking these pangolins a lot.`,
     img:'traps.jpg',
-     background:'',
+     background:'wood_house.jpg',
   }
 }
