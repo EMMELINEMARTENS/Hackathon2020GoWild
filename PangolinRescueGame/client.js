@@ -31,7 +31,7 @@ function init(bundle, parent, options = {}) {
 
 
   const rightpanel = new Surface(600,300, Surface.SurfaceShape.Flat);
-  rightpanel.setAngle(0.5,0)
+  rightpanel.setAngle(0.90,0)
 
   r360.renderToSurface(
     r360.createRoot('Rightpanel', {}),

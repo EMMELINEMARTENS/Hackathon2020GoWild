@@ -58,17 +58,18 @@ return(
 const styles = StyleSheet.create({
   Text:{
 		  backgroundColor: '#777879',
-		  fontSize:20,
+		  fontSize:10,
 		  fontWeight: '400',
 		  paddingLeft:0.2,
 		  paddingRight:0.2,
 		  textAlign:'center',
 		  textAlignVertical:'center',
-		  width:  20,
+		  width:  50,
+		  height: 20,
 		transform:[
-				{translate: [0,0, 0]},
-				{rotateX: -90},
-				{rotateY: 90},
+				{translate: [-80, -30, -100]},
+				{rotateX: 0},
+				{rotateY: 45},
 						]
   },
   Video:{

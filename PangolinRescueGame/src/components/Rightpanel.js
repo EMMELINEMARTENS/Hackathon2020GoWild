@@ -14,6 +14,7 @@ import pangolin_info from '../../data/pangolinData';
 
 const {AudioModule } = NativeModules;
 
+
 export default class Rightpanel extends React.Component{
   state = {
     detail:pangolin_info.Habitat.detail,
@@ -35,15 +36,9 @@ export default class Rightpanel extends React.Component{
 	  Environment.setBackgroundImage(asset(`${pangolin_info[`${nextPage}`].background}`))
   }
 
-  playAmbientMusic(){
-	  AudioModule.playEnvironmental({
-		  source: asset('./sounds/rainforest.wav'),
-		  volume:0.3
-	  })
-  }
+
 
   render(){
-	  this.playAmbientMusic();
     return(
       <View style={styles.wrapper}>
         <View>
