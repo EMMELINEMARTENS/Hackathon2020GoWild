@@ -7,6 +7,8 @@ AppRegistry,
   View,
 } from 'react-360';
 import App from './src/App';
+import Leftpanel from './src/components/Leftpanel';
+import Rightpanel from './src/components/Rightpanel';
 
 
 export default class PangolinRescueGame extends React.Component{
@@ -19,6 +21,8 @@ export default class PangolinRescueGame extends React.Component{
     return (
       <View>
       <App/>
+      <Leftpanel/>
+      <Rightpanel/>
       </View>
     );
   }
@@ -45,3 +49,4 @@ export default class PangolinRescueGame extends React.Component{
 // });
 
 AppRegistry.registerComponent('PangolinRescueGame', () => PangolinRescueGame);
+
